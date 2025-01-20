@@ -162,6 +162,12 @@ vim.opt.inccommand = 'split'
 -- Show which line your cursor is on
 vim.opt.cursorline = true
 
+-- Set cursor style to block always
+vim.opt.guicursor = 'a:block'
+
+-- Add border to splits
+vim.opt.laststatus = 3
+
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
