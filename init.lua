@@ -171,9 +171,6 @@ vim.opt.laststatus = 3
 -- Minimal number of screen lines to keep above and below the cursor.
 vim.opt.scrolloff = 10
 
--- Set highlight color in visual mode
-vim.api.nvim_set_hl(0, "Visual", { bg = "black", fg = "NONE" })
-
 -- [[ Basic Keymaps ]]
 --  See `:help vim.keymap.set()`
 
@@ -894,8 +891,8 @@ require('lazy').setup({
       })
       vim.cmd.colorscheme 'cyberdream'
 
-      -- You can configure highlights by doing something like:
-      vim.cmd.hi 'Comment gui=none'
+      -- Set highlight color in visual mode
+      vim.api.nvim_set_hl(0, "Visual", { bg = "black", fg = "NONE" })
     end,
   },
 
